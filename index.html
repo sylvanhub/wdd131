@@ -3,11 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Odeh Sylvester</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Odeh  Sylvester. Introductory page.">
+    <meta name="author" content="Odeh Sylvester">
+    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links with Finger Symbols</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>WDD 131-ODEH SYLVESTER</h1>
-
+    <header class="header">
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="name">Odeh Sylvester</span></h1>
+        <div>
+            <nav>
+                <button class="hamburger">&#9776;</button>
+                <button class="close-icon">&times;</button>
+                <ul class="navigation">
+                    <li><a href="https://www.linkedin.com/in/odehsylvesterohegham/">LinkedIn</a></li>
+                    <li><a href="https://byui.instructure.com">I-Learn</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41"> Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
+    <div class="container">
+        <div class="main-grid">
+            <div class="main-column">
+                <div class="card">
+                    <div class="card-header about">
+                        About Me
+                    </div>
+                    <div class="card-body">
+                        <div class="about-me">
+                            <div class="text">
+                                <p> My name is Odeh Sylvester and I love it when people call me Sylvan.
+                                    I was born and raised in Nigeria and I have lived my whole life in Nigeria.
+                                    The only time I ever travelled out was when I served a full-time mission in Sierra-Leone. 
+                                    I am married and sealed in the temple and I love spending time with my wife and my daughter. 
+                                    Currently, I am working as a maintenance engineer in a farm here in my country.
+                                </p>
+                            </div>
+                            <div class="sylvan">
+                                <img src="images/sylvan_img.jpg" alt="Sylvan" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="text-center fw-bold mb-2 title">
+                            <h2>Lagos, Nigeria</h2>
+                        </div>
+                        <hr>
+                        
+                        <div class="flag">
+                            <div class="official">
+                                <img src="images/nigerian_flag.png" alt="Flag of Nigeria" class="img-fluid">
+                                <h3 class="nigeria">Official Flag of Nigeria</h3>
+                            </div>
+                            <p> Nigeria is the largest country in the world with different diverse cultures and beliefs.
+                                It is the home of the bravest with people willing to die for what they believe.
+                                Despite the hard times the people are facing, they still find peace in the little they have. 
+                                The country is so fertile for the growth of plants and crops, but the inability of its citizens
+                                to engage in mechanized farming has made the cost of food items very expensive for everyone. 
+                                But despite this, we still find peace in the Savior as the country is very religious.
+                                It is usually referred to as the giant of AFRICA because of the greatness it has achieved in the past.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="card">
+                    <div class="card-header resources">
+                        Web Dev Resources
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><a href="https://www.w3schools.com/"> <i class="fas fa-hand-point-right"></i> W3 Schools</a></li>
+                            <li><a href="https://www.netacad.com/"><i class="fas fa-hand-point-right"></i> Cisco Networking Academy</a></li>
+                            <li><a href="https://www.remove.bg/"><i class="fas fa-hand-point-right"></i> Piture Editor</a></li>
+                            <li><a href="https://alison.com/"><i class="fas fa-hand-point-right"></i> Alison Free Courses</a></li>
+                            <li><a href="https://www.udemy.com/?utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=OzpaRYwFVr0&ranMID=47901&ranEAID=OzpaRYwFVr0&ranSiteID=OzpaRYwFVr0-Vb_x.zuuqIB_SH_Gjj4B2g"><i class="fas fa-hand-point-right"></i> Udemy</a></li>
+                            <li><a href="https://aws.amazon.com/free/?gclid=CjwKCAjw1K-zBhBIEiwAWeCOF3IV2XpnxOdcFfmd2owP6VKP1rtdWIpEJrGKplyjsrDm1Y0DcortjhoC1IkQAvD_BwE&trk=75d51e79-f3c7-42de-b6f4-c7385d467fb3&sc_channel=ps&ef_id=CjwKCAjw1K-zBhBIEiwAWeCOF3IV2XpnxOdcFfmd2owP6VKP1rtdWIpEJrGKplyjsrDm1Y0DcortjhoC1IkQAvD_BwE:G:s&s_kwcid=AL!4422!3!686673842142!p!!g!!oracle!20922275746!160333174031&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"><i class="fas fa-hand-point-right"></i> AWS Free Trial</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            &copy;<span id="year"></span> Odeh Sylvester. Ibadan, Nigeria <br>
+            <small>Last Modified: <span id="lastModifiedDateTime"></span></small>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('lastModifiedDateTime').textContent = document.lastModified;
+    </script>
 </body>
 </html>
