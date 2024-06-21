@@ -1,3 +1,11 @@
+/* Import Font Awesome CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+/* Base CSS content */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,27 +14,24 @@
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color:white;
-    color: green;
+    background-color: white;
+    color: #333; /* Darker text for better contrast */
 }
 
 .header {
-    background-color: darkgray;
-    color:green;
+    background-color: #333; /* Dark background */
+    color: white; /* Light text on dark background */
     text-align: center;
     padding: 15px 0;
 }
 
-.header h1 span {
-    color: white;
+.header h1 {
+    margin-bottom: 30px;
+    color: white; /* Inheriting color from header */
 }
 
-h1 {
-    margin-bottom: 30px;
-  }
-
 .nav {
-    background-color:green;
+    background-color: green; /* Background color for navigation */
     padding: 0;
 }
 
@@ -37,14 +42,15 @@ h1 {
     align-items: center;
     margin-top: 13px;
     margin-bottom: -20px;
-    background-color: blue;
+    background-color: blue; /* Background color for navigation */
 }
 
 .navigation li {
     flex: 1 1 auto;
 }
+
 .navigation a {
-    color: #C0C0C0;
+    color: #C0C0C0; /* Original color */
     text-decoration: none;
     font-size: 21px;
     position: relative;
@@ -54,13 +60,12 @@ h1 {
 }
 
 .navigation a:hover {
-    color: white;
+    color: white; /* Improved contrast on hover */
     text-decoration: overline;
-    transition: .5s;
 }
 
 .navigation a.active {
-    color: white;
+    color: white; /* Active link color for better visibility */
 }
 
 .container {
@@ -81,8 +86,8 @@ h1 {
 }
 
 .card-header {
-    background-color: #ED115f;
-    color: white;
+    background-color: #ED115f; /* Header background color */
+    color: white; /* Light text on dark background */
     padding: 10px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -90,7 +95,6 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
 }
-
 
 .card-body {
     padding: 20px;
@@ -108,8 +112,8 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.sylvan img {
-    width: 150px;
+.profile_pic img {
+    height: 200px;
     margin-left: 20px;
 }
 
@@ -119,8 +123,8 @@ h1 {
 }
 
 .flag .official img {
-    width: 200px;
-    height: 154px;
+    width: 318px;
+    height: 159px;
     margin-right: 20px;
     margin-bottom: 5px;
     margin-top: 25px;
@@ -129,14 +133,14 @@ h1 {
 .flag p {
     flex: 1;
     font-family: 'Times New Roman', Times, serif;
-    color: 	#555555;
+    color: #555555; /* Darker text for better contrast */
     font-size: 18px;
     margin-top: 5px;
-    text-align: justify
+    text-align: justify;
 }
 
-.nigeria  {
-    color: green;
+.nigeria {
+    color: green; /* Adjusted for better contrast */
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -147,6 +151,7 @@ h1 {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #333; /* Darker text for better contrast */
 }
 
 .sidebar .card {
@@ -167,40 +172,33 @@ h1 {
 }
 
 .sidebar .card-body ul li a {
-    color: #000;
+    color: #000; /* Dark text */
     text-decoration: none;
 }
 
 .sidebar .card-body ul li {
-    line-height: 2; 
+    line-height: 2;
     font-size: 16.5px;
     text-decoration: none;
     font-family: Verdana, sans-serif;
 }
 
 .sidebar .card-body ul li:hover a {
-    color: #ED115F;
-    transition: .5s;
+    color: #ED115F; /* Improved contrast on hover */
+    transition: 0.5s;
 }
 
 .sidebar .card-body ul li a:visited {
-    color: #7D3C98; 
-}
-
-.fa{
-    margin-left:5px;
-    margin-right:5px;
+    color: #7D3C98; /* Visited link color */
 }
 
 .footer {
-    background-color:grey;
-    color: white;
+    background-color: green; /* Footer background color */
+    color: white; /* Light text on dark background */
     text-align: center;
 }
 
-
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar-collapse {
         flex-direction: column;
         align-items: center;
@@ -228,122 +226,39 @@ h1 {
         flex-direction: column;
     }
 
-    .sylvan img {
+    .sylvan_img img {
         width: 100%;
         height: auto;
         margin: 20px 0 0 0;
     }
-}
 
-
-@media (max-width: 767px) {
     .sidebar .card-body ul {
-        position: relative; 
-        top: auto; 
-        transform: none; 
-        text-align: left; 
+        position: relative;
+        top: auto;
+        transform: none;
+        text-align: left;
         margin-left: 10px;
     }
-}
 
-@media (max-width: 767px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        width: 800px;
-        margin-bottom: 10px;
-    }
-
-    .nigeria {
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .sylvan img {
-        max-width: 100%; 
-        width: 800px;
-        margin-bottom: 10px;
-    }
-
-}
-
-
-@media (max-width: 767px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .flag .official img.img-fluid {
-        max-width: 100%; 
-        width: 500px;
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .sylvan img.img-fluid {
-        max-width: 100%; 
-        width: 500px;
-        height: auto; 
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .nigeria {
-        font-size: 32px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 720px) and (max-width: 1024px) {
-    .card .about, .resources,
-    .card-body .title {
-        font-size: 22px;
-    }
-    .card {
-        margin-top: 20px;
-    }
-    .sidebar{
-        margin-bottom: 40px;
-    }
-}
-
-@media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-    .flag .official img{
-        margin-bottom: 5px;
+
+    .flag .official img.img-fluid {
+        max-width: 100%;
+        height: auto;
     }
-}
 
-
-.hamburger,
-.close-icon {
-    font-size: 20px;
-    background: black;
-    border: none;
-    cursor: pointer;
-    display: none; 
-    color: white; 
-    margin-bottom: -15px;
-    margin-top: 15px;
-}
-
-@media (max-width: 768px) {
-    .menu-container {
-        width: 100%;
-        background-color: black;
+    .nigeria {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 40px;
     }
 
     .hamburger {
         display: block;
         width: 100%;
-        padding-left: 20px !important;
+        padding-left: 20px;
         text-align: left;
         padding: 5px 0;
         color: white;
@@ -380,8 +295,41 @@ h1 {
         padding: 10px 0;
     }
 
-    .navigation li:nth-child(5) a 
-	{
-        padding-bottom:35px;
-	}
+    .navigation li:nth-child(5) a {
+        padding-bottom: 35px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    .flag .official img.img-fluid {
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+    }
+
+    .sylvan_img.img-fluid {
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+    }
+
+    .nigeria {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .card .about,
+    .resources,
+    .card-body .title {
+        font-size: 22px;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        margin-bottom: 40px;
+    }
 }

@@ -1,8 +1,7 @@
-const year = new Date().getFullYear();
-const lastModified = document.lastModified;
+const year = document.querySelector("#currentyear");
+const todaysDate = new Date();
 
-const copyrightText = &copy; ${year} Odeh  - Sylvester, Ibadan, Nigeria.<br><span class ="last-modified">Last Modification: ${lastModified}</span>;
+year.innerHTML = `${todaysDate.getFullYear()}`;
 
-const footerElement = document.getElementById('footer');
-
-footerElement.innerHTML = copyrightText;
+const modified = document.querySelector("#lastModifiedDateTime");
+modified.innerHTML = `Last date page was modified ${document.lastModified}`;
