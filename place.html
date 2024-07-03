@@ -1,15 +1,18 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Explore the cultural and geographical aspects of Nigeria.">
+    <meta name="author" content="Sylvester Odeh">
+    <title>Nigeria: A Place of Interest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-mobile.css" media="screen and (max-width: 600px)">
     <script src="scripts/place.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
-
 </head>
 <body>
     <header>
@@ -20,7 +23,7 @@
             <picture>
                 <source srcset="images/nigeria-picture.jpg" media="(max-width: 767px)">
                 <source srcset="images/nigeria-picture.jpg" media="(min-width: 768px)">
-                <img src="images/nigeria-picture.jpg" alt="Tokyo View">
+                <img src="images/nigeria-picture.jpg" alt="Nigeria View">
             </picture>
             <div class="overlay">
                 <div class="data">
@@ -28,12 +31,11 @@
                     <p><strong>Area:</strong> 923,769 sq km</p>
                     <p><strong>Population:</strong> 206,139,589</p>
                     <p><strong>Capital:</strong> Abuja</p>
-                    <p><strong>Languages:</strong> English (official), Hausa, Yoruba and Igbo</p>
+                    <p><strong>Languages:</strong> English (official), Hausa, Yoruba, and Igbo</p>
                     <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
                     <p><strong>Time Zone:</strong> UTC+1</p>
                     <p><strong>Calling Code:</strong> +234</p>
                     <p><strong>Internet TLD:</strong> .ng</p>
-                            
                 </div>
                 <div class="weather">
                     <h2>Weather</h2>
@@ -50,6 +52,9 @@
         <p>&copy; <span id="currentyear"></span> 🌹 Odeh Sylvester🌹 Nigeria 💚</p>
         <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
 </body>
 </html>
-
