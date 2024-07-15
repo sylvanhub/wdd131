@@ -1,0 +1,121 @@
+:root {
+    --primary-color: green;
+    --secondary-color: white;
+    --tertiary-color: lightgreen;
+    --quaternary-color: #f0f0f0;
+  
+  }
+  
+  html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    height: 100%;
+    padding: 1rem;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  
+  header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+  }
+  
+  h1 {
+    color: var(--secondary-color);
+  }
+  
+  .justify-center {
+    text-align: center;
+  }
+  
+  
+  input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0); 
+  }
+  
+  .stars {
+    justify-content: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+  }
+  
+  .stars > label:hover {
+    color: #000;
+  }
+  
+  .stars > label::before {
+    content: "\2606";
+  }
+  
+  .stars input:checked ~ label::before {
+    content: "\2605";
+  }
+  
+  /* Form Control */
+  .form-control {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control select,
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  input[type="number"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .form {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  #lastModified {
+    font-size: small;
+  }
+  
+  #copyright {
+    font-size: large;
+  }
