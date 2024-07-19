@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/sitestyles.css">
+    <link rel="stylesheet" href="styles/formstyles.css">
     <meta charset="UTF-8">
+    <meta name="author" content="Odeh Sylvester">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pearl's Touch Unisex Salon | Brief History | Home</title>
-    <script src="scripts/dates.js" defer></script>
-
+    <script src="scripts/login.js" defer></script>
+    <script src="scripts/complainform.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,10 +20,13 @@
             <a href="activities.html">Type of Activities</a>
             <a href="training.html">Our Training Program</a>
             <a href="site-plan.html">Site Plan</a>
-            <a href="sendusamessage.html">Message Us</a>
+            <a href="https://wa.me/message/SNCP32GUVQ2ZN1">Message Us</a>
             <a href="log_in.html">Log In</a>
-            
+            <button id="toggleFormButton">Submit Complaint</button>
         </nav>
+        <div id="complaint-form-container">
+            <div id="form-container"></div>
+        </div>
     </header>
 
     <div id="visitors">
@@ -52,22 +57,10 @@
     </main>
 
     <footer>
-        <p>Pearl's Touch Unisex Salon &copy;2024-Sylvester Odeh</p>
-        <span id="country">Nigeria</span>
+        <p>Pearl's Touch Unisex Salon &copy;2024-Sylvester Odeh,</p>
+        <span id="country">Nigeria,</span>
         <p id="lastModified"></p>
         <span id="currentyear"></span>
-        <span id="copyrightIcon">&#169;</span>
-        <div class="social">
-            <a href="https://facebook.com">
-                <img src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png" alt="Facebook Icon">
-            </a>
-            <a href="https://twitter.com">
-                <img src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png" alt="Twitter Icon">
-            </a>
-            <a href="https://instagram.com">
-                <img src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png" alt="Instagram Icon">
-            </a>
-        </div>
     </footer>
 </body>
 </html>
